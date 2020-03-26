@@ -11,7 +11,7 @@
                     Pizzas List
                 </div>
 
-            <p>{{$name}} Age {{$age}}</p>
+            {{-- <p>{{$name}} Age {{$age}}</p> --}}
            
 
           
@@ -27,15 +27,17 @@
 
             @foreach($pizzas as $pizza)
                 <div>
-                    {{ $loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}
+                   {{--  {{ $loop->index }} {{ $pizza['type'] }} - {{ $pizza['base'] }}
 
                     @if($loop->first)
                         <span>-First loop item</span>  {{-- displaying at the loop first item --}}
-                    @endif
+                   {{--  @endif
 
                     @if($loop->last)
                     <span>-Last loop item</span>  {{-- displaying at the loop last item --}}
-                    @endif
+                   {{--  @endif --}} 
+
+                   {{$pizza->name}} - {{$pizza->type}} - {{$pizza->base}}
                 </div>
 
             @endforeach
