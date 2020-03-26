@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/pizzas','pizzaController@index');
-
-Route::get('/pizzas/{id}','pizzaController@show');
 Route::get('/pizzas/create','pizzaController@create');
+Route::post('/pizzas','pizzaController@store');
+Route::get('/pizzas/{id}','pizzaController@show');
+

@@ -20,6 +20,8 @@
                 <div class="title m-b-md">
                    The North's best pizza
                 </div>
+            <p class="mssg">{{session('mssg')}}</p> {{-- passing data from the redirect and displaying data to view  --}}
+                <a href="/pizzas/create">Order a Pizza</a>
 
                 
             </div>
